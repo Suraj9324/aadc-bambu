@@ -1,0 +1,86 @@
+{
+  "name": "aadc-bambu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official AADC Bambu website built with Gatsby",
+  "keywords": [
+    "gatsby"
+  ],
+  "homepage": "https://aadc-bambu.pages.dev/",
+  "bugs": {
+    "url": "https://github.com/natainditama/aadc-bambu/issues",
+    "email": "natainditama.dev@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/natainditama/aadc-bambu/"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Nata Inditama",
+    "email": "natainditama.dev@gmail.com",
+    "url": "https://github.com/natainditama"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier \"src/**/*.+(ts|js|tsx)\" --write",
+    "postinstall": "husky install",
+    "serve": "gatsby serve",
+    "start": "gatsby develop",
+    "typecheck": "tsc --noEmit"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js,jsx,tsx}": [
+      "prettier --ignore-path .gitignore --write"
+    ]
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "endOfLine": "auto",
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.1",
+    "@popperjs/core": "^2.11.8",
+    "@studio-freight/react-lenis": "^0.0.47",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "gatsby": "^5.8.0",
+    "gsap": "^3.12.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "split-type": "^0.3.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-google-gtag": "^5.10.0",
+    "gatsby-plugin-image": "^3.4.0",
+    "gatsby-plugin-manifest": "^5.4.0",
+    "gatsby-plugin-offline": "^6.4.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.4.0",
+    "gatsby-plugin-sitemap": "^6.4.0",
+    "gatsby-source-contentful": "^8.13.0",
+    "gatsby-source-filesystem": "^5.4.0",
+    "gatsby-transformer-sharp": "^5.4.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.0.0"
+  }
+}
